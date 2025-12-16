@@ -10,8 +10,8 @@ function App() {
   });
 
   // Set your wedding date here (YYYY, MM-1, DD, HH, MM)
-  const weddingDate = new Date(2025, 5, 15, 14, 0, 0); // June 15, 2025, 2:00 PM
-
+const weddingDate = new Date(2026, 2, 10, 10, 0, 0);
+  
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date().getTime();
