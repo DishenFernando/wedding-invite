@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Replace the gradient above with your couple image */
+  /* background-image: url('your-couple-image.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.couple-names {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.wedding-date {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: white;
+  margin: 0 auto 30px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Countdown Section */
+.countdown-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.countdown-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #667eea;
+  font-weight: 300;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.countdown-item:hover {
+  transform: translateY(-5px);
+}
+
+.countdown-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #667eea;
+  line-height: 1;
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Details Section */
+.details-section {
+  padding: 80px 20px;
+  background: white;
+}
+
+.details-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+  font-weight: 300;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-card {
+  background: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.detail-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #667eea;
+  font-weight: 400;
+}
+
+.detail-card p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.address {
+  font-size: 0.95rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* RSVP Section */
+.rsvp-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.rsvp-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.rsvp-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.rsvp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 20px 50px;
+  font-size: 1.3rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+
+.rsvp-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #f8f8f8;
+}
+
+.rsvp-button:active {
+  transform: translateY(-1px);
+}
+
+.button-icon {
+  font-size: 1.5rem;
+}
+
+.button-text {
+  letter-spacing: 1px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+}
+
+.form-container iframe {
+  display: block;
+}
+
+.rsvp-note {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 20px;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.hearts {
+  font-size: 2rem;
+  color: #ff6b6b;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .couple-names {
+    font-size: 2.5rem;
+  }
+
+  .wedding-date {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .countdown-section h2,
+  .details-section h2,
+  .rsvp-section h2 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    gap: 15px;
+  }
+
+  .countdown-item {
+    padding: 20px 30px;
+    min-width: 100px;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .countdown-label {
+    font-size: 0.85rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .detail-card {
+    padding: 30px 20px;
+  }
+
+  .rsvp-button {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+  }
+
+  .button-icon {
+    font-size: 1.3rem;
+  }
+
+  .countdown-section,
+  .details-section,
+  .rsvp-section {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .couple-names {
+    font-size: 2rem;
+  }
+
+  .countdown-item {
+    padding: 15px 20px;
+    min-width: 80px;
+  }
+
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+
+  .detail-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .detail-card p {
+    font-size: 1rem;
+  }
+
+  .rsvp-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .button-text {
+    font-size: 0.95rem;
+  }
+}
