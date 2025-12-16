@@ -10,7 +10,7 @@ function App() {
   });
 
   // Set your wedding date here (YYYY, MM-1, DD, HH, MM)
-const weddingDate = new Date(2026, 2, 10, 10, 0, 0);
+const weddingDate = new Date(2026, 7, 7, 10, 0, 0);
   
   useEffect(() => {
     const timer = setInterval(() => {
@@ -46,8 +46,8 @@ const weddingDate = new Date(2026, 2, 10, 10, 0, 0);
       <section className="hero">
         <div className="overlay"></div>
         <div className="hero-content">
-          <h1 className="couple-names">Sarah & John</h1>
-          <p className="wedding-date">June 15, 2025</p>
+          <h1 className="couple-names">Nushara & Numesh</h1>
+          <p className="wedding-date">August 07, 2026</p>
           <div className="divider"></div>
           <p className="tagline">Together with their families, invite you to celebrate their wedding</p>
         </div>
