@@ -83,7 +83,7 @@ const weddingDate = new Date(2026, 7, 7, 10, 0, 0);
           <div className="detail-card">
             <div className="icon">📅</div>
             <h3>Date</h3>
-            <p>Sunday, June 15, 2025</p>
+            <p>Sunday, August 07, 2026</p>
           </div>
           <div className="detail-card">
             <div className="icon">⏰</div>
