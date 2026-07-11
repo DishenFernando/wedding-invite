@@ -9,7 +9,7 @@ import './App.css';
    ========================================================================= */
 const BACKGROUND_IMAGE_URL = '/bg.jpg'; // e.g. "https://res.cloudinary.com/.../couple.jpg"
 const MUSIC_SRC = '/audio/wedding-song.mp3';
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
+const GOOGLE_FORM_URL = 'https://forms.gle/QPxYVjFJg2sTm4nx5';
 
 const WEDDING_DATE = new Date(2026, 7, 7, 14, 0, 0); // Aug 7 2026, 2:00 PM
 
@@ -301,7 +301,7 @@ function App() {
             <IconMail />
             <span>Fill out RSVP form</span>
           </button>
-          <p className="rsvp-note">We kindly request your response by July 15, 2026</p>
+          <p className="rsvp-note">We kindly request your response by July 20, 2026</p>
         </div>
       </section>
 
