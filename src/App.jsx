@@ -285,7 +285,7 @@ function App() {
           <div className="detail-card reveal" style={{ transitionDelay: '0.24s' }}>
             <IconCelebration />
             <h3>Reception</h3>
-            <p>Holy Emmanuel Church Rd, Moratuwa</p>
+            <p>Seagates Hotel</p>
             <p className="address">St. Sebastian Road, Katukurunda, Kalutara</p>
           </div>
         </div>
