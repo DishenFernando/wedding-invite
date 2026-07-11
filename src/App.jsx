@@ -7,7 +7,7 @@ import './App.css';
    hosted photo URL in here (Cloudinary, Imgur direct link, /public/images,
    etc). Leave it null to keep the emerald + palm-frond fallback.
    ========================================================================= */
-const BACKGROUND_IMAGE_URL = "https://i.etsystatic.com/54020307/r/il/b3ef35/6357078553/il_340x270.6357078553_jibb.jpg"; // e.g. "https://res.cloudinary.com/.../couple.jpg"
+const BACKGROUND_IMAGE_URL = '/bg.jpg'; // e.g. "https://res.cloudinary.com/.../couple.jpg"
 const MUSIC_SRC = '/audio/wedding-song.mp3';
 const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform';
 
@@ -33,28 +33,43 @@ const Frond = ({ className = '', flip = false }) => (
 
 /* ---------------------------- Icons ---------------------------- */
 const IconCalendar = () => (
-  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
-    <rect x="3" y="5" width="18" height="16" rx="2" />
-    <path d="M16 3v4M8 3v4M3 10h18" />
+  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1">
+    <rect x="3" y="5.5" width="18" height="15" rx="2.5" />
+    <path d="M16 3.2v4.6M8 3.2v4.6M3 10.2h18" />
+    <path d="M12 14.2c-1-1.3-3.4-1-3.4 0.9 0 1.5 2 2.7 3.4 3.9 1.4-1.2 3.4-2.4 3.4-3.9 0-1.9-2.4-2.2-3.4-0.9Z" />
   </svg>
 );
+
 const IconClock = () => (
-  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
+  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1">
     <circle cx="12" cy="12" r="9" />
-    <path d="M12 7v5l3 2" />
+    <circle cx="12" cy="12" r="6.2" strokeWidth="0.6" opacity="0.5" />
+    <path d="M12 8.2v4l2.8 1.7" />
+    <circle cx="12" cy="3" r="0.6" fill="currentColor" stroke="none" />
+    <circle cx="12" cy="21" r="0.6" fill="currentColor" stroke="none" />
+    <circle cx="3" cy="12" r="0.6" fill="currentColor" stroke="none" />
+    <circle cx="21" cy="12" r="0.6" fill="currentColor" stroke="none" />
   </svg>
 );
+
 const IconChurch = () => (
-  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
-    <path d="M12 2v4M10 4h4" />
-    <path d="M12 6l8 6v10H4V12l8-6Z" />
-    <path d="M12 12v8M9 16h6" />
+  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1">
+    <path d="M12 2.2v3.2M10.4 3.6h3.2" />
+    <path d="M12 5.4L21 12v9H3v-9L12 5.4Z" />
+    <path d="M12 12.2a2 2 0 0 1 2 2v6.8h-4V14.2a2 2 0 0 1 2-2Z" />
+    <path d="M6.5 15.5h1.6M15.9 15.5h1.6" />
+    <circle cx="7.3" cy="18.5" r="0.5" fill="currentColor" stroke="none" />
+    <circle cx="16.7" cy="18.5" r="0.5" fill="currentColor" stroke="none" />
   </svg>
 );
+
 const IconCelebration = () => (
-  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3">
-    <path d="M4 20l3-9 9 3-9 6-3 0Z" />
-    <path d="M15 4l1.5 1.5M19 8l1.5 1.5M14 8l1 1M18 4l1 1" />
+  <svg className="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.1">
+    <path d="M6 9c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3Z" />
+    <path d="M18 9c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3Z" />
+    <path d="M7.2 8.2 9.6 11M16.8 8.2 14.4 11" />
+    <path d="M9.6 11h4.8l2.4 10.5H7.2L9.6 11Z" />
+    <path d="M9.6 15.5h4.8" strokeWidth="0.7" opacity="0.6" />
   </svg>
 );
 const IconMail = () => (
