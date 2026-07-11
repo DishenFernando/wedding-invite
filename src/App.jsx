@@ -192,7 +192,7 @@ function App() {
           <h1 className="seal-names">Nushara<span className="amp">&amp;</span>Numesh</h1>
           <button className="seal-button" onClick={openInvitation} aria-label="Open the invitation">
             <span className="seal-button-ring" />
-            <span className="seal-button-inner">N&nbsp;N</span>
+            <span className="seal-button-inner">N&nbsp;&amp;&nbsp;N</span>
           </button>
           <p className="seal-hint">Tap the seal to open</p>
         </div>
