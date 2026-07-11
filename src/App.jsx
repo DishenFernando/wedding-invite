@@ -201,7 +201,7 @@ function App() {
           <div className="monogram">N&nbsp;&amp;&nbsp;N</div>
           <p className="eyebrow">We&rsquo;re getting married</p>
           <h1 className="couple-names">Nushara &amp; Numesh</h1>
-          <p className="wedding-date">Sunday · August 07, 2026 · Colombo</p>
+          <p className="wedding-date">Friday · August 07, 2026 · Colombo</p>
           <div className="divider" />
           <p className="tagline">
             Together with their families, joyfully invite you to celebrate the beginning of their forever
@@ -254,24 +254,24 @@ function App() {
           <div className="detail-card reveal">
             <IconCalendar />
             <h3>Date</h3>
-            <p>Sunday, August 07, 2026</p>
+            <p>Friday, August 07, 2026</p>
           </div>
           <div className="detail-card reveal" style={{ transitionDelay: '0.08s' }}>
             <IconClock />
             <h3>Time</h3>
-            <p>2:00 PM</p>
+            <p>8:00 AM</p>
           </div>
           <div className="detail-card reveal" style={{ transitionDelay: '0.16s' }}>
             <IconChurch />
             <h3>Ceremony</h3>
-            <p>St. Mary&rsquo;s Cathedral</p>
-            <p className="address">123 Church Street, Colombo</p>
+            <p>Holy Emmanuel Church</p>
+            <p className="address">Holy Emmanuel Church Rd, Moratuwa</p>
           </div>
           <div className="detail-card reveal" style={{ transitionDelay: '0.24s' }}>
             <IconCelebration />
             <h3>Reception</h3>
-            <p>Grand Ballroom</p>
-            <p className="address">456 Celebration Ave, Colombo</p>
+            <p>Holy Emmanuel Church Rd, Moratuwa</p>
+            <p className="address">St. Sebastian Road, Katukurunda, Kalutara</p>
           </div>
         </div>
       </section>
