@@ -114,8 +114,14 @@ button { font-family: inherit; }
 .seal-frond-tl { top: -20px; left: -30px; }
 .seal-frond-br { bottom: -20px; right: -30px; }
 
-.seal-eyebrow { font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase; color: var(--blush); margin-bottom: 14px; }
-
+.seal-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--blush);
+  margin-bottom: 14px;
+  font-weight: 1000; /* Bold */
+}
 .seal-names {
   font-family: var(--font-display);
   font-style: italic;
@@ -185,8 +191,8 @@ button { font-family: inherit; }
 }
 
 .monogram {
-  width: 78px;
-  height: 78px;
+  width: 85px;
+  height: 85px;
   margin: 0 auto 26px;
   border: 1px solid var(--gold);
   border-radius: 50%;
@@ -346,7 +352,7 @@ button { font-family: inherit; }
   text-align: center;
 }
 .footer p { font-family: var(--font-display); font-style: italic; font-size: 1.1rem; }
-.footer .monogram { width: 42px; height: 42px; font-size: 0.85rem; margin-bottom: 14px; }
+.footer .monogram { width: 55px; height: 55px; font-size: 0.80rem; margin-bottom: 14px; }
 
 /* ======================= Floating music toggle ======================= */
 .music-toggle {
