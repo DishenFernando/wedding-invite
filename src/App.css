@@ -286,27 +286,27 @@ button { font-family: inherit; }
 }
 
 .detail-card {
-  background: rgba(251, 246, 236, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(9, 24, 17, 0.55);   /* was rgba(251, 246, 236, 0.08) — matches glass-panel-dark */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 38px 24px;
   border-radius: 8px;
   text-align: center;
+  border: 1px solid rgba(228, 201, 120, 0.32);
   border-top: 2px solid var(--gold);
-  box-shadow: 0 18px 40px rgba(14,36,26,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.7s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, opacity 0.7s ease;
 }
-.detail-card:hover { transform: translateY(-4px); box-shadow: 0 22px 46px rgba(14,36,26,0.32); }
+.detail-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-light);
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.45);
+}
 
-.reveal { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
-/* in-view is added to the parent .details-section (not to each card), so cards
-   fade in via this descendant selector. */
-.details-section.in-view .reveal { opacity: 1; transform: translateY(0); }
-
-.detail-icon { width: 36px; height: 36px; margin: 0 auto 18px; color: var(--gold); }
-.detail-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--emerald-800); }
-.detail-card p { font-size: 0.98rem; color: #55564f; margin-bottom: 4px; }
-.address { font-size: 0.86rem; color: #9a9284; font-style: italic; }
+.detail-icon { width: 36px; height: 36px; margin: 0 auto 18px; color: var(--gold-light); }
+.detail-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--ivory); }
+.detail-card p { font-size: 0.98rem; color: rgba(251, 246, 236, 0.88); margin-bottom: 4px; }
+.address { font-size: 0.86rem; color: var(--blush); font-style: italic; }
 
 /* ======================= RSVP ======================= */
 .rsvp-section { padding: 20px 20px 100px; }
